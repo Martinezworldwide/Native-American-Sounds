@@ -3,21 +3,163 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Music</title>
+  <title>Native American Sounds</title>
+  <style>
+    /* General Reset */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #121212;
+      color: #f4f4f4;
+      line-height: 1.6;
+    }
+
+    /* Header Styling */
+    header {
+      background: linear-gradient(45deg, #6200ea, #03dac6);
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    header p {
+      margin: 0;
+      font-size: 1rem;
+      font-weight: 300;
+    }
+
+    /* Navigation Styling */
+    nav {
+      background-color: #1f1f1f;
+      padding: 0.5rem;
+      text-align: center;
+    }
+
+    nav a {
+      color: #03dac6;
+      text-decoration: none;
+      font-size: 1rem;
+      margin: 0 1rem;
+    }
+
+    nav a:hover {
+      color: #6200ea;
+    }
+
+    /* Container for Content */
+    .container {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    .media-item {
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+
+    /* Audio and Video Styling */
+    audio, video {
+      width: 100%;
+      max-width: 100%;
+      border: 2px solid #6200ea;
+      border-radius: 8px;
+    }
+
+    /* Footer Styling */
+    footer {
+      background-color: #1f1f1f;
+      color: #ccc;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+
+    footer p {
+      margin: 0;
+      font-size: 0.8rem;
+    }
+
+    /* Mobile Styling */
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.8rem;
+      }
+
+      header p {
+        font-size: 0.9rem;
+      }
+
+      nav a {
+        font-size: 0.9rem;
+        margin: 0 0.5rem;
+      }
+    }
+  </style>
 </head>
 <body>
-  <h1>Welcome to My Music</h1>
-  
-  <h2>Audio Tracks</h2>
-  <audio controls>
-    <source src="Empire-in-the-Shadows.mp3" type="audio/mpeg">
-    Your browser does not support the audio element.
-  </audio>
-  
-  <h2>Videos</h2>
-  <video controls width="640" height="360">
-    <source src="your-video-file.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
+  <!-- Header -->
+  <header>
+    <h1>Native American Sounds</h1>
+    <p>Explore the rich audio and video collection of Native American culture</p>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="#audio">Audio Tracks</a>
+    <a href="#video">Videos</a>
+    <a href="#about">About</a>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="container">
+    <!-- Audio Section -->
+    <section id="audio">
+      <h2>Audio Tracks</h2>
+      <div class="media-item">
+        <h3>Song 1: Traditional</h3>
+        <audio controls>
+          <source src="media/song1.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+      <div class="media-item">
+        <h3>Song 2: Modern</h3>
+        <audio controls>
+          <source src="Empire-in-the-Shadows.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+    </section>
+
+    <!-- Video Section -->
+    <section id="video">
+      <h2>Videos</h2>
+      <div class="media-item">
+        <h3>Str1kercoach Network</h3>
+        <video controls>
+          <source src="media/video1.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+      <h2>About</h2>
+      <p>This collection is dedicated to preserving and sharing the sounds and sights of Native American heritage. Each piece represents the beauty and diversity of the culture. Enjoy the journey!</p>
+    </section>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Native American Sounds. All Rights Reserved.</p>
+  </footer>
 </body>
 </html>
